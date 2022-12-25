@@ -4,22 +4,43 @@
     padding: 0;
 }
 #item-container{
-    padding: 10px;
+    padding: 20px 40px;
     height: 79vh;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    column-gap: 16px;
-    row-gap: 16px;
+    column-gap: 50px;
+    row-gap: 25px;
     overflow-x: scroll;
 
 }
 .card-box{
-    height: 200px;
-    width: 200px;
-    border:1px solid red;
+    padding: 20px;
+    height: 300px;
+    width: 240px;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow: hidden;
+}
+.card-box:hover{
+    transform: rotate(-4deg);
+    
+    
 }
 .image{
-    height: 100%;
+    height: 60%;
     width: 100%;
+}
+.price-tag{
+    font-size: 16px;
+    font-weight: bolder;
+    margin: 4px 0px;
+}
+.category-tag{
+    margin-top: 8px;
+    color: rgba(8, 9, 8, 0.4);
+    font-style: italic;
+}
+.link-tag{
+    text-decoration: none;
 }

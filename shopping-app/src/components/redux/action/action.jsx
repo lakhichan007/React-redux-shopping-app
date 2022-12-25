@@ -6,9 +6,9 @@ return{
 }
 }
 
-export const selectedProducts=(products)=>{
+export const selectedProduct=(product)=>{
     return{
-        type:"SELECTED_PRODUCTS",
-        payload:products
+        type:"SELECTED_PRODUCT",
+        payload:product
     }
 }
