@@ -21,6 +21,7 @@
     border-radius: 4px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     overflow: hidden;
+    /* background-color: cadetblue; */
 }
 .card-box:hover{
     transform: rotate(-4deg);
@@ -43,4 +44,90 @@
 }
 .link-tag{
     text-decoration: none;
+}
+/* ------------------------------------------------- */
+#product-container{
+    height: 79vh;
+    width: 100%;
+    display: flex;
+    padding: 25px;
+    justify-content: center;
+    border: 1px solid green;
+}
+#product-image-box{
+    height: 100%;
+    width: 35%;
+    /* border: 1px solid red; */
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#product-details{
+    height: 100%;
+    width: 35%;
+    /* border: 1px solid red; */
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#product-image{
+    height: 100%;
+    width: 100%;
+}
+#product-title{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#product-price{
+    margin: 10px 0px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+#rating-btn{
+    margin: 10px 0px;
+    padding: 2px 4px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+#review-tag{
+display: inline-block;
+margin-left: 10px;
+font-weight: bolder;
+color: rgb(1, 1, 1,0.5);
+}
+#remaining-text{
+    color: rgb(234, 10, 10);
+    font-style: italic;
+    margin-bottom: 10px;
+}
+#return-text{
+    font-weight: bolder;
+    margin-top: 10px;
+}
+#cart-btn{
+    background-color: rgb(192, 98, 15);
+    height: 36px;
+    width: 225px;
+    color: white;
+    font-weight: bolder;
+    border: none;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 140px;
+    right: 525px;
+}
+#buy-btn{
+    background-color: green;
+    height: 36px;
+    width: 225px;
+    color: white;
+    font-weight: bolder;
+    border: none;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 140px;
+    right:275px;
 }

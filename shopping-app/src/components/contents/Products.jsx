@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const Products=()=>{
     const dispatch=useDispatch()
     const products=useSelector((state)=>state.productReducer.products)
-    console.log(products)
+    // console.log(products)
     useEffect(()=>{
         axios.get("https://fakestoreapi.com/products")
         .then((res)=>{
@@ -16,18 +16,18 @@ const Products=()=>{
             dispatch(setProducts(res.data))
         })
         .catch((err)=>{
-            console.log(err)
+            console.log(err);
         })
     },[])
  return(
     <>
-    <p>sdfghjk</p>
+    {/* <p>all</p> */}
     <div id="item-container">
         {  products.map(ele=>{
         return(
             
             <div className="card-box" key={ele.id}>
-                <Link to={`/product/${ele.id}`}>
+                <Link className="link-tag" to={`/product/${ele.id}`}>
                 <img className="image" src={ele.image}/>
                 <p>{ele.title}</p>
                 <p className="price-tag">₹ {ele.price*100}</p>

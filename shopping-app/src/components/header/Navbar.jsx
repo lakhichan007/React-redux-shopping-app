@@ -5,10 +5,14 @@ const Navbar = () => {
         <>
             <div id="navbar">
                 <div>
-                    <h1>Shooping App</h1>
+                    <img id="shoppin-logo" src={require("./images/shopping.png")}/>
                 </div>
                 <div>
-                    <p>Selected product</p>
+                    <input id="serach-box" type="text" placeholder="search here..."/>
+                </div>
+                <div>
+                <i id="header-login" className="fa fa-user-o" aria-hidden="true">  Login</i>
+                <i id="header-cart" class="fa fa-shopping-cart" aria-hidden="true">Cart</i>  
                 </div>
             </div>
         </>
